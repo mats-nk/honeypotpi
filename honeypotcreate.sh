@@ -6,9 +6,9 @@
 git clone https://github.com/kx499/xrdp.git
 cd xrdp
 git pull
-sudo apt-get -y update
-sudo apt-get -y install build-essential automake autoconf libtool libpam0g-dev libx11-dev libxfixes-dev libssl-dev libxrandr-dev libxrandr2 apt-show-versions libapt-pkg-perl libauthen-pam-perl libio-pty-perl pkg-config make etherape wireshark
-sudo apt-get -fy install
+sudo apt -y update
+sudo apt -y install build-essential automake autoconf libtool libpam0g-dev libx11-dev libxfixes-dev libssl-dev libxrandr-dev libxrandr2 apt-show-versions libapt-pkg-perl libauthen-pam-perl libio-pty-perl pkg-config make etherape wireshark
+sudo apt -fy install
 sudo ./bootstrap
 sudo ./configure
 sudo make
@@ -40,4 +40,3 @@ echo ""
 echo "Follow me on twitter for more honeypot fun @ebrinkster :)"
 echo ""
 echo "Modified to be a Pi Honeypot by @ChrisPaiano and @CircuitStatic on 20141206"
-
